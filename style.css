@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    color: white;
+    letter-spacing: 5px;
+    text-transform: lowercase;
+}
+
+.logo span:first-child{
+    color: blueviolet;    
+}
+
+.logo span:last-child{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    position: relative;
+    z-index: 9999;
+}
+
+.menu li a{
+    padding: 17px;
+    color: white;
+    font-size: 14pxx;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li:hover{
+    background: blueviolet;
+}
+
+.menu li:hover > .submenu,
+.submenu li:hover > .submenu{
+    display: block;
+}
+
+
+.submenu{
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    top: 50px;
+    left: 0px;
+    min-width: 110%;
+    background-color: blueviolet;
+}
+
+.submenu li:hover{
+    background-color:chartreuse;
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu li .submenu{
+    top: 0;
+    left: 100%;
+}
+
+main{    
+    height: 700px;
+    width: 100%;
+    padding: 10px;
+}
+
+.conteudo{
+    width: 100%;
+    padding: 10px;
+}
+
+.titulo{
+    width: 100%;
+    padding-bottom: 20px;
+    font-size:xx-large;
+    letter-spacing: 1px;
+    text-shadow:
+    -1px -1px 0px #ffffff,
+    -1px 1px 0px #ffffff,
+    1px -1px 0px #ffffff,
+    1px 0px 0px #ffffff;
+
+}
+
+h3{
+    font-size: 50px;
+    letter-spacing: 4px;
+    text-shadow:
+    -1px -1px 0px #000,
+    -1px 1px 0px #000,
+    1px -1px 0px #000,
+    1px 0px 0px #000;
+}
+
+.main{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.cidade {
+    display: block; 
+    width: 100%; 
+    height: 400px; 
+    box-shadow: black;
+  }
+  
+  .texto {
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 16px; 
+    text-align: center; 
+  }
+
+
+.texto2{
+    padding: 20px;
+    background-color: rgb(66, 60, 60);
+    border-radius: 30px;
+}
+
+.role{
+    font-size: 15px;
+    color: #000;
+}
+
+footer{
+    height: 50px;
+    background-color: rgb(37, 25, 48);
+    color: white;
+    text-align: center;
+}
+
+.footer{
+    padding: 12px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
